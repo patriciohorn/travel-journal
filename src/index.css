@@ -23,11 +23,6 @@ body {
   height: 100%;
 }
 
-body {
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-
 img,
 picture,
 video,
@@ -60,4 +55,20 @@ body {
   font-family: var(--font-family);
   color: var(--color-text);
   background: var(--color-background);
+}
+
+/* smol css*/
+article * + * {
+  margin-top: 1em;
+}
+
+body > * {
+  --padding: 1rem * 2;
+  --max-width: 50rem;
+  width: min(100% - var(--padding), var(--max-width));
+  margin-inline: auto;
+}
+
+.section {
+  padding-block: clamp(6rem, 10vh, 7rem);
 }
