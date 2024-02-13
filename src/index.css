@@ -1,0 +1,63 @@
+:root {
+  --font-family: 'Inter', sans-serif;
+  --font-weight-light: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  --color-text: black;
+  --color-background: white;
+}
+
+*/ *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  /* line-height: calc(1em + 0.725rem); check later */
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+body,
+input,
+button,
+select,
+option {
+  font-weight: var(--font-weight-light);
+  font-family: var(--font-family);
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--color-text);
+  background: var(--color-background);
+}
