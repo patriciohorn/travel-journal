@@ -3,7 +3,10 @@
   --font-weight-light: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
-  --color-text: black;
+  --color-primary: #f55a5a;
+  --color-text: #2b283a;
+  --color-gray-100: #dadada;
+  --color-gray-500: #918e9b;
   --color-background: white;
 }
 
@@ -55,20 +58,35 @@ body {
   font-family: var(--font-family);
   color: var(--color-text);
   background: var(--color-background);
+  font-size: 0.75rem;
+  line-height: 1.5;
 }
 
-/* smol css*/
-article * + * {
-  margin-top: 1em;
+.bold {
+  font-weight: var(--font-weight-bold);
 }
 
-body > * {
-  --padding: 1rem * 2;
-  --max-width: 50rem;
+.link {
+  color: var(--color-gray-500);
+}
+
+.container {
+  --padding: 2.5rem * 2;
+  --max-width: 36rem;
   width: min(100% - var(--padding), var(--max-width));
   margin-inline: auto;
 }
 
 .section {
-  padding-block: clamp(6rem, 10vh, 7rem);
+  /* padding-block: clamp(4rem, 10vh, 6rem); */
+  padding-block: 4rem;
+}
+
+.mt-sm {
+  margin-top: 0.5rem;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
 }

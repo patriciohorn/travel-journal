@@ -1,0 +1,77 @@
+nav {
+  height: 3.75rem;
+  padding-block: 1rem;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo--img {
+  width: 24px;
+}
+
+.logo--text {
+  font-size: 1.5rem;
+  letter-spacing: -0.075em;
+  font-weight: var(--font-weight-medium);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 0.6fr 1fr;
+  width: 100%;
+  gap: 1.5rem;
+  padding-block: 1.25rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+@media (min-width: 50rem) {
+  .card {
+    grid-template-columns: 0.5fr 1fr;
+  }
+}
+
+.card--img {
+  aspect-ratio: 3/4;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card--content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card--content_heading span {
+  letter-spacing: 0.16em;
+  margin-right: 0.75rem;
+}
+
+.card--content_heading svg {
+  margin-right: 0.25rem;
+}
+
+.card--content_heading a {
+  color: var(--color-gray-500);
+  text-underline-offset: 0.21rem;
+  transition: color 200ms ease-out;
+}
+
+.card--content_heading a:hover {
+  color: var(--color-primary);
+}
+
+.card--content_heading h2 {
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
